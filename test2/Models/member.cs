@@ -6,7 +6,7 @@
 //    如果重新產生程式碼，將會覆寫對這個檔案的手動變更。
 // </auto-generated>
 //------------------------------------------------------------------------------
-
+using System.ComponentModel.DataAnnotations;
 namespace test2.Models
 {
     using System;
@@ -14,10 +14,17 @@ namespace test2.Models
     
     public partial class member
     {
+        [Required]
+        [Display(Name ="Member ID")]
         public int member_id { get; set; }
+        [Required]
+        [Display(Name = "Name")]
         public string name { get; set; }
+        [Display(Name = "Gender")]
         public string gender { get; set; }
+        [Display(Name = "Phone")]
         public string phone { get; set; }
+        [Display(Name = "Address")]
         public string address { get; set; }
     }
 }
